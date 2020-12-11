@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 from utilities.Baseclass import Baseclass
-from page_objects.Confirm_Page import ConfirmPage
+from page_objects.confirm_Page import ConfirmPage
 
 
 class CheckoutPage(Baseclass):

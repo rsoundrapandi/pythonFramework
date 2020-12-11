@@ -250,8 +250,8 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <h1>07-12-2020 20-33-52.html</h1>
-    <p>Report generated on 07-Dec-2020 at 20:34:04 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.0.0</p>
+    <h1>reports.html</h1>
+    <p>Report generated on 09-Dec-2020 at 11:51:40 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.0.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -267,8 +267,8 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.9.0</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 12.15 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>0 tests ran in 0.25 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">1 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -279,24 +279,12 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
+      <tbody class="error results-table-row">
         <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test_e2e.py::Test_Suite::test_e2e[getData0]</td>
-          <td class="col-duration">11.51</td>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_e2e.py::Test_Suite::test_e2e[getData0]::setup</td>
+          <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div><div><img src="/B:\pythonprojects\pythonframework/testcases/reports/test_e2e.py_Test_Suite_test_e2e[getData0].png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">self = &lt;testcases.test_e2e.Test_Suite object at 0x0000021F94AAC280&gt;, getData = {&#x27;ProductName&#x27;: &#x27;Blackberry&#x27;, &#x27;Screenshot&#x27;: &#x27;Test2.png&#x27;}<br/><br/>    def test_e2e(self, getData):<br/>        log = self.getLogger()<br/>        home_page = HomePage(self.driver)<br/>        checkout_page = home_page.shopitems()<br/>        product_name = checkout_page.product()<br/>        i = -1<br/>        for product in product_name:<br/>            i = i + 1<br/>            print(i)<br/>            pd_name = product.text<br/>            log.info(pd_name)<br/>            print(pd_name)<br/>        if pd_name == getData[&quot;ProductName&quot;]:<br/>            self.scrolldown()<br/>            checkout_page.Addcartbutton()[i].click()<br/>            # self.expilicitwait(&quot;India&quot;)<br/>            self.scrollup()<br/>&gt;           assert pd_name == &#x27;BlackBerry&#x27;<br/><span class="error">E           AssertionError: assert &#x27;Blackberry&#x27; == &#x27;BlackBerry&#x27;</span><br/><span class="error">E             - BlackBerry</span><br/><span class="error">E             ?      ^</span><br/><span class="error">E             + Blackberry</span><br/><span class="error">E             ?      ^</span><br/><br/>test_e2e.py:32: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>0
-iphone X
-1
-Samsung Note 8
-2
-Nokia Edge
-3
-Blackberry
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_e2e:test_e2e.py:25 iphone X
-INFO     test_e2e:test_e2e.py:25 Samsung Note 8
-INFO     test_e2e:test_e2e.py:25 Nokia Edge
-INFO     test_e2e:test_e2e.py:25 Blackberry<br/></div></td></tr></tbody></table></body></html>
+            <div class="log">request = &lt;SubRequest &#x27;setup&#x27; for &lt;Function test_e2e[getData0]&gt;&gt;<br/><br/>    @pytest.fixture(scope=&quot;class&quot;)<br/>    def setup(request):<br/>        global driver<br/>        browser_name = request.config.getoption(&quot;browser_name&quot;)<br/>        if browser_name == &quot;chrome&quot;:<br/>            driver = webdriver.Chrome(executable_path=&quot;B:\\Drivers\\chromedriver_win32\\chromedriver.exe&quot;)<br/>        elif browser_name == &quot;firefox&quot;:<br/>            driver = webdriver.Firefox(executable_path=&quot;path\\to\\geckodriver.exe&quot;)<br/>        elif browser_name == &quot;IE&quot;:<br/>            print(&quot;IE driver&quot;)<br/>&gt;       driver.get(&quot;https://rahulshettyacademy.com/angularpractice/&quot;)<br/><span class="error">E       AttributeError: &#x27;NoneType&#x27; object has no attribute &#x27;get&#x27;</span><br/><br/>conftest.py:26: AttributeError<br/></div></td></tr></tbody></table></body></html>

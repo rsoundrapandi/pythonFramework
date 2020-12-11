@@ -29,7 +29,7 @@ class Test_Suite(Baseclass):
             checkout_page.Addcartbutton()[i].click()
             # self.expilicitwait("India")
             self.scrollup()
-            assert pd_name == 'BlackBerry'
+            assert pd_name == 'Blackberry'
         self.screenshot(getData["Screenshot"])
 
     @pytest.fixture(params=[{"ProductName": "Blackberry", "Screenshot": "Test2.png"}])
